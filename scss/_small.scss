@@ -1,0 +1,185 @@
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+/* grid rules */
+.row {
+  clear: both;
+}
+.limited {
+  max-width: 1140px;
+  margin: auto;
+}
+
+.column {
+  float: left;
+  padding: 0 2vw;
+  margin: 0 0 0.75rem 0;
+}
+
+.small-12 {
+  width: 100%;
+}
+.small-6 {
+  width: 50%;
+}
+/* header rules */
+header {
+  background-color: $primaryColor;
+  img {
+    float: left;
+    height: 85px;
+    padding-right: 0.75rem;
+  }
+  h1,
+  h2 {
+    margin: 0;
+    color: white;
+    font-weight: 300;
+    font-style: italic;
+  }
+
+  h1 {
+    padding-top: 0.5rem;
+    font-size: 1.95rem;
+  }
+
+  h2 {
+    padding-top: 0.2rem;
+    font-size: 1.1rem;
+  }
+}
+
+/* navigation rules */
+button#hamburgerBtn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2.4rem;
+  cursor: pointer;
+  padding: 0 30px 0 2vw;
+}
+
+nav {
+  background-color: $secondaryColor;
+
+  ul.open {
+    display: block;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    display: none;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  li.active {
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  a {
+    display: block;
+    padding: 0.8rem 0;
+    color: #eee;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  a:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+}
+
+/* main rules */
+
+main {
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  h1,
+  h3 {
+    color: $primaryColor;
+    font-style: italic;
+    margin: 0.5rem 0 0.1rem 0;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  mp {
+    font-size: 1.2rem;
+    margin: 0 0 0.3rem 0;
+  }
+}
+
+/* specials  */
+.labeled {
+  position: relative;
+
+  h6,
+  p {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.7);
+    margin: 0;
+    width: 100%;
+    padding: 0.4rem 1rem;
+  }
+
+  h6 {
+    top: 0;
+    font-size: 2rem;
+    font-weight: 300;
+  }
+
+  p {
+    bottom: 0;
+    font-weight: 700;
+    color: #b00;
+  }
+}
+
+/* footer rules */
+footer {
+  background-color: $primaryColor;
+  font-size: 1.2rem;
+
+  h2 {
+    font-style: italic;
+    text-transform: uppercase;
+    margin: 1rem 0.3rem 0;
+  }
+
+  li {
+    list-style: none;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
